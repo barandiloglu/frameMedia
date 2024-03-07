@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './pages/navbar';
+import HomePage from './pages/homePage';
+import Movies from './pages/movies';
+import TV from './pages/tv';
+import Free from './pages/free';
+import MyFrame from './pages/myFrame';
+import Footer from './pages/footer';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+        <div>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/movies" element={<Movies />} />
+            <Route path="/tv" element={<TV />} />
+            <Route path="/free" element={<Free />} />
+            <Route path="/myFrame" element={<MyFrame />} />
+          </Routes> 
+        </div>
+      <Footer />
+    </Router>
+     
+  
   );
 }
 
