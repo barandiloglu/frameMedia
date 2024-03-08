@@ -10,10 +10,11 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgba(0, 0, 0, 0.5); /* Initial background color */
-    animation: popUp 0.3s ease forwards; /* Apply the animation */
-    transform: scale(0.8); /* Initial scale to 80% */
-    opacity: 0; /* Initial opacity to 0 */
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: popUp 0.3s ease forwards; 
+    transform: scale(0.8);
+    opacity: 0; 
+    z-index: 3;
 }
 
 @keyframes popUp {
@@ -29,9 +30,7 @@
 
 
 .login-content {
-    background-image: url('../../components/background.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
-    background-size: cover; 
-    background-position: center; 
+    background: linear-gradient(to right, black, #001C2D);
     padding: 50px 120px 50px;
     border: 1px solid #797979;
     border-radius: 5px;
@@ -99,11 +98,11 @@
     border: 1px solid white;
     border-radius: 3px;
     cursor: pointer;
-    margin-bottom: 10px; /* Add spacing between buttons */
+    margin-bottom: 10px; 
 }
 
 button:last-child {
-    margin-right: 0; /* Remove margin from the last button */
+    margin-right: 0; 
 }
 
 .login-content .form-buttons button:hover {
@@ -120,7 +119,7 @@ button:last-child {
     border: 1px solid white;
     border-radius: 3px;
     cursor: pointer;
-    margin-bottom: 10px; /* Add spacing between buttons */
+    margin-bottom: 10px; 
 }
 
 .login-content .form-buttons .signUp:hover {
@@ -130,21 +129,21 @@ button:last-child {
     border: 1px solid white;
     border-radius: 3px;
     cursor: pointer;
-    margin-bottom: 10px; /* Add spacing between buttons */
+    margin-bottom: 10px; 
 }
 
 .login-content .forgotPassword button {
-    background-color: transparent; /* Set background to transparent */
-    color: #007bff; /* Set text color */
-    text-decoration: underline; /* Underline the text */
-    border: none; /* Remove border */
-    cursor: pointer; /* Set cursor to pointer */
-    padding: 0; /* Remove padding */
-    margin-bottom: 10px; /* Add margin-bottom for spacing */
+    background-color: transparent; 
+    color: #007bff;
+    text-decoration: underline; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0; 
+    margin-bottom: 10px;
 }
 
 .login-content .forgotPassword button:hover {
-    color: #013a77; /* Change text color on hover */
+    color: #013a77; 
 }
 
 .login-content .close-button {

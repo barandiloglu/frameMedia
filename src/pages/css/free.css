@@ -1,0 +1,55 @@
+.free {
+    background: linear-gradient(to right, black, #001C2D);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.free h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.serie-row,
+.movie-row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+}
+
+.serie-div,
+.movie-div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.serie-button,
+.movie-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.serie-button img,
+.movie-button img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.serie-button img:hover,
+.movie-button img:hover {
+    transform: scale(1.1);
+}
+
+.banner-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

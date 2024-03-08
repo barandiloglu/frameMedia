@@ -1,0 +1,102 @@
+.serie-details {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 20px; 
+  height: auto;
+  background: black;
+  justify-content: space-between;
+}
+
+.serie-poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-height: 500px;
+  max-width: 350px;
+}
+
+.serie-poster img {
+  width: 300px; 
+  border-radius: 8px; 
+}
+
+.serie-synopsis {
+  margin-top: 10px;
+}
+
+.serie-synopsis h1 {
+  margin-top: 10px; 
+}
+
+.serie-synopsis p {
+  margin: 10px 0; 
+}
+
+.serie-synopsis .serie-buttons button{
+  cursor: pointer;
+  border: 1px solid #007677;
+  background-color: transparent; 
+  border-radius: 5px;
+  padding: 10px 50px;
+  color: white;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.serie-synopsis .serie-buttons button:hover{
+  cursor: pointer;
+  border: 1px solid #007677;
+  background-color: #007677; 
+}
+
+.serie-purchase {
+  background: transparent;
+  margin-top: 20px;
+}
+
+.serie-synopsis .serie-purchase button {
+  margin-right: 30px;
+  background-color: #007677; 
+  border-radius: 5px;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.serie-purchase button:hover {
+  background-color: #003738; 
+}
+
+.serie-buttons {
+  margin-bottom: 20px; 
+}
+
+.serie-purchase button {
+  margin-right: 10px; 
+}
+
+.animation-poster {
+  position: relative;
+  width: 500px;
+  height: auto; 
+  overflow: hidden; 
+}
+
+.animation-poster img {
+  width: 100%; 
+  height: auto; 
+}
+
+.animation-poster::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 1;
+}

@@ -1,0 +1,46 @@
+.movies {
+    background: linear-gradient(to right, black, #001C2D);
+    padding: 0px;
+    border: 1px solid #001C2D;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movie-div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.movie-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 20px; 
+    width: 200px; 
+    height: 300px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.movie-div .movie-button img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+.movie-button img:hover {
+    transform: scale(1.1); 
+}
+
+
+

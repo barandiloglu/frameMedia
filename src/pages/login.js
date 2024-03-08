@@ -8,7 +8,11 @@ const Login = ( {onClose} ) => {
     const [showRegistration, setShowRegistration] = useState(false);
 
     const toggleRegistration = () => {
-        setShowRegistration(true); // Show the registration popup
+        setShowRegistration(true); 
+    };
+
+    const closeRegistration = () => {
+        setShowRegistration(false);
     };
 
     return (
@@ -37,7 +41,7 @@ const Login = ( {onClose} ) => {
                             type="button" 
                             className="signUp" 
                             onClick={() => {
-                                setShowRegistration(true); // Show the registration popup
+                                toggleRegistration(); 
                             }}>
                                 Create an Account
                         </button>
@@ -45,7 +49,7 @@ const Login = ( {onClose} ) => {
                 </form>
             </div>
             
-            {showRegistration && <Registration />}
+            {showRegistration && <Registration onClose={closeRegistration}/>}
         </div>
     );
 };

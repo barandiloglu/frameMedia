@@ -4,8 +4,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 const Registration = ( {onClose} ) => {
     return (
-        <div className="login-popup">
-            <div className="login-content">
+        <div className="registration-popup">
+            <div className="registration-content">
                 <button className="close-button" onClick={onClose}><AiOutlineClose/></button>
 
                 <h2>Create an Account</h2>

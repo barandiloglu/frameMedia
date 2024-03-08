@@ -1,5 +1,5 @@
 import React from "react";
-import './css/myVudu.css'
+import './css/myFrame.css'
 
 const MyFrame = () => {
     return (

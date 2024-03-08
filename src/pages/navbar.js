@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import './css/navBar.css';
+import './css/navbar.css';
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from 'react-icons/fa'; 
 
 import Login from './login';
-import Registration from "./registration";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -60,7 +59,6 @@ const Navbar = () => {
             </div>
 
             {showLogin && <Login onClose={closeLogin} />}
-            {showLogin && <Registration onClose={closeLogin} />}
         </nav>
     );
 };
