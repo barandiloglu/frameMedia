@@ -42,5 +42,28 @@
     transform: scale(1.1); 
 }
 
+@media screen and (max-width: 768px) {
+    .movies {
+        height: auto; 
+    }
+
+    .movie-div {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .movie-button {
+        margin: 10px 0;
+        width: 80%; 
+        max-width: 250px; 
+        height: auto;
+    }
+
+    .movie-div .movie-button img {
+        height: auto; 
+    }
+}
+
+
 
 

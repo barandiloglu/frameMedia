@@ -21,7 +21,7 @@ const Login = ( {onClose} ) => {
                 
                 <button className="close-button" onClick={onClose}><AiOutlineClose/></button>
 
-                <h2>Sign in to Vudu</h2>
+                <h2>Sign in to Frame</h2>
                 <form>
                     <div className="form-group">
                         <input type="email" placeholder="Email" id="email" name="email" required />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './css/navbar.css';
+import './css/navBar.css';
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from 'react-icons/fa'; 
 

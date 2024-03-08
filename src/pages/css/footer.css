@@ -79,3 +79,18 @@ ul button:hover {
     font-size: 12px;
 }
 
+@media screen and (min-width: 768px) {
+    .footer {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .footer-column {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .footer-column:last-child {
+        margin-right: 0;
+    }
+}

@@ -44,4 +44,25 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .series {
+        height: auto; 
+    }
+
+    .serie-div {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .serie-button {
+        margin: 10px 0;
+        width: 80%;
+        max-width: 250px; 
+        height: auto;
+    }
+
+    .serie-div .serie-button img {
+        height: auto; 
+    }
+}
 

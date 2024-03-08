@@ -100,3 +100,26 @@
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .serie-details {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .serie-poster,
+  .serie-synopsis {
+    width: 100%;
+    max-width: none;
+  }
+
+
+  .serie-synopsis .serie-buttons button {
+    margin: 10px 0;
+    margin-right: 0;
+  }
+  
+  .animation-poster {
+    display: none;
+  }
+}
