@@ -7,7 +7,7 @@ const SerieDetails = () => {
     const [serieDetails, setSerieDetails] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/series/${id}`)
+        fetch(`https://framemedia-backend.onrender.com/series/${id}`)
             .then(response => response.json())
             .then(data => {
                 setSerieDetails(data);

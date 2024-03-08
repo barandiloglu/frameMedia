@@ -20,7 +20,7 @@ const HomePage = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:3001/movies')
+        fetch('https://framemedia-backend.onrender.com/movies')
             .then(response => response.json())
             .then(data => {
                 setHeroSection(data.slice(0, 5)); 
@@ -32,7 +32,7 @@ const HomePage = () => {
     }, []);
 
     useEffect(() => {
-        fetch('http://localhost:3001/series')
+        fetch('https://framemedia-backend.onrender.com/series')
             .then(response => response.json())
             .then(data => {
                 setSeries(data);

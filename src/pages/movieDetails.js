@@ -7,7 +7,7 @@ const MovieDetails = () => {
     const [movieDetails, setMovieDetails] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/movies/${id}`)
+        fetch(`https://framemedia-backend.onrender.com/movies/${id}`)
             .then(response => response.json())
             .then(data => {
                 setMovieDetails(data);

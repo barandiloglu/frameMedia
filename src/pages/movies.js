@@ -5,7 +5,7 @@ const Movies = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3001/movies')
+        fetch('https://framemedia-backend.onrender.com/movies')
             .then(response => response.json())
             .then(data => {
                 setMovies(data);
