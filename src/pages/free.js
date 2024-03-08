@@ -8,7 +8,7 @@ const Free = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:3001/movies')
+        fetch('https://framemedia-backend.onrender.com/movies')
             .then(response => response.json())
             .then(data => {
                 const filteredMovies = data.filter(movie => movie.price_rent === 0 && movie.price_sale === 0);
@@ -18,7 +18,7 @@ const Free = () => {
     }, []);
 
     useEffect(() => {
-        fetch('http://localhost:3001/series')
+        fetch('https://framemedia-backend.onrender.com/series')
             .then(response => response.json())
             .then(data => {
                 const filteredSeries = data.filter(serie => serie.price_rent === 0 && serie.price_sale === 0);
