@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="footer-column">
                     <h2>My Account</h2>
                     <ul>
-                        <li><button>My Vudu</button></li>
+                        <li><button>My Frame</button></li>
                         <li><button>Account</button></li>
                         <li><button>Settings</button></li>
                         <li><button>Manage Devices</button></li>
